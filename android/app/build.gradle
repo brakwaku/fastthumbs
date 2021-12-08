@@ -21,6 +21,20 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    signingConfig {
+        release {
+            storeFile file("main.keystore")
+            storePassword 'android'
+            keyAlias 'fastthumbs'
+            keyPassword 'android'
+        }
+        debug {
+            storeFile file("main.keystore")
+            storePassword 'android'
+            keyAlias 'fastthumbs'
+            keyPassword 'android'
+        }
+    }
 }
 
 repositories {
